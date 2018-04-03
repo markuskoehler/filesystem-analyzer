@@ -48,6 +48,19 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'wdcloudmirror' => [
+	        'driver' => 'ftp',
+	        'host' => '10.0.0.2',
+	        'port' => 21,
+	        'username' => 'root',
+	        'password' => 'Altleiningen01',
+	        //'privateKey' => 'path/to/or/contents/of/privatekey',
+	        'passive' => true,
+	        'ssl' => true,
+	        'root' => '/RAID1',
+	        'timeout' => 10,
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
